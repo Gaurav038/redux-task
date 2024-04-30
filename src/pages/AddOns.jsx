@@ -14,6 +14,7 @@ const AddOns = () => {
   );
 
   const handleSubmit = (e) => {
+    e.preventDefault();
     if (selectedAddOns.length > 0) {
       dispatch(
         updateStep3({
